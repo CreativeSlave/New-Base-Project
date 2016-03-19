@@ -1,5 +1,6 @@
 # New-Base-Project
 (For my team) These are the basics of what a web developer is expected to know. So, this is just a boilerplate, basic project structure for a new project. This uses NPM (Node Package Manager), Grunt, and Bower, and optionally Yoeman. These tools are now common place tools for a web/app developer creating a front-end user interface. Since you are here I won't go through Git, but I myself am learning while I go. From this starting point you can create/install any resource and be able to automate the process of distrobution - such as to a production server. You might just want to see Yeoman below.
+Note: In all the following commands do not type the dollar sign. "$" before the command. This just means it is a command to type because in your terminal the line always starts with it.
 
 ##To start, install NodeJS and NPM 
 (NodeJS and NPM comes together) 
@@ -24,14 +25,15 @@ In their words
 ##Install Bower
 
 __Bower is a command line utility. Install it with npm.__
+
 ONLY NEEDED IF YOU DON’T HAVE IT
-- [ ] __$ npm install -g bower__
+- [ ] $__ npm install -g bower__
 
 Bower requires node, npm and git.
 
 Use the following commands to generate your default project, and use bower to install the base components
 
-- [ ] $ bower init
+- [ ] $ __bower init__
 
 If you do not have grunt-init install it with the following command:
 
