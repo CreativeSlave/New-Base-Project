@@ -1,6 +1,6 @@
 {
-  "name": "New Base Project",
-  "description": "Create a new project",
+  "name": "project",
+  "description": "Company App",
   "version": "1.0.0",
   "homepage": "https://github.com/CreativeSlave/New-Base-Project",
   "author": {
@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git://github.com/CreativeSlave/New-Base-Project"
   },
+  "peerDependencies": {},
+  "keywords": [
+    "learn","basic","setup","npm","grunt","bower","yeoman","bootstrap","angular"
+  ],
   "engines": {
     "node": ">= 0.10.0"
   },
