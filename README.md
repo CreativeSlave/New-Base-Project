@@ -13,6 +13,9 @@ Simply get this project and start building, but below is how I started.
 As for me, I like simple instructions, such as do this, then that, so that is what I am trying to do here. Its hard where to assume what a person might or might not know, and what level of instruction to provide. I usually prefer implicit instructions. 
 By the way, here is a guide on Markdown: https://daringfireball.net/projects/markdown/basics
 
+
+>Oh, by the way there is something you should know, and its confusing. Unlike installing an Application on a computer whereas its in only one place, a node module, or bower component can either be installed in just your project or saved in a global location on your computer. So, take note of command options such as "-g", and "--save-dev". My preference is to put packages in a global location, but there are many cases where you just want to install it for a project - such as compatibility, and sharing. But it is common to have bower_components, and node_modules within your project. This does not mean you need to distribute these, and we typically don't unless you yourself are creating a component or module. So, we update the ".gitignore" file to ignore these directories. I purposely included the ".gitignore" for you to see here. Check it out and you will see that I am ignoring these directories and files.
+
 ###Start by creating a Basic Setup with Bower
 I just can't live without Bower now that its here. See http://bower.io
 In their words 
@@ -22,7 +25,7 @@ In their words
 
 __Bower is a command line utility. Install it with npm.__
 ONLY NEEDED IF YOU DON’T HAVE IT
-$ npm install -g bower
+- [ ] __$ npm install -g bower__
 
 Bower requires node, npm and git.
 
