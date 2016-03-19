@@ -20,6 +20,8 @@ var project = {
     copyright:{
         years:"2015-2016",
         reserved:"All",
+        type:"",
+        license:"MIT",
         extra:""
     }
 

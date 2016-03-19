@@ -1,4 +1,17 @@
 {
+  "name": "New Base Project",
+  "description": "Create a new project",
+  "version": "1.0.0",
+  "homepage": "https://github.com/CreativeSlave/New-Base-Project",
+  "author": {
+    "name": "Drew Ambrose",
+    "email": "CreativeSlave@users.noreply.github.com",
+    "url": "http://creativeslave.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CreativeSlave/New-Base-Project"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -10,6 +23,7 @@
     "grunt-contrib-concat": "~0.4.0",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-mocha-cli": "~1.0.1",
-    "grunt-mkdir": "~0.5.0"
-  }
+    "grunt-mkdir": "~1.0.0"
+  },
+  "directories": {}
 }
