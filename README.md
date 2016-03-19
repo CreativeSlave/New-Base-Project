@@ -123,5 +123,24 @@ Then install the needed generator(s). Generators are npm packages named generato
 I usually type "sudo" for permissions before any command which will propt you for your password. Such as __$ sudo bower install <package name>__
 
 
+##Other Cool Tools
+
+###grunt-string-replace 
+https://www.npmjs.com/package/grunt-string-replace
+
+Replaces strings on files by using string or regex patterns. 
+Attempts to be a String.prototype.replace adapter task for your grunt project.
+
+###Getting Started
+This plugin requires node >= 0.8.0, Grunt >= 0.4.0 and npm >= 1.4.15 (latest stable is recommended).
+
+If you haven't used Grunt before, be sure to check out the Getting Started guide, as it explains how to create a Gruntfile as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+
+- [ ] $ __npm install grunt-string-replace --save-dev__
+
+Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+Include in Gruntfile.js if yu wish.
+__grunt.loadNpmTasks('grunt-string-replace');__
+
 ###Final Thoughts
 It would be nice to combine all of this in one command. That might be possible, but several commands have options, and typically you must choose your libraries. I hope someone smart - unlike me - will do this. In a case like that we could just open our favorite IDE (I like WebStorm for the tooling and terminal built in), and from a terminal opened at the project base type the command, select the options and be done. Yeoman does a lot, and may very well be that final tool to do all the above. Still though you have to manually create the Git repository, set up your SFTP and so forth.

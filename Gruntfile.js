@@ -29,7 +29,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: '<%= concat.dist.dest %>',
-                dest: 'dist/<%= pkg.name %>.min.js'
+                dest: 'dist/js/<%= pkg.name %>.min.js'
             }
         },
         mkdir: {
@@ -68,7 +68,8 @@ module.exports = function (grunt) {
                 eqnull: true,
                 browser: true,
                 globals: {
-                    jQuery: true
+                    jQuery: true,
+                    Bootstrap:true
                 }
             },
             gruntfile: {
