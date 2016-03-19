@@ -1,10 +1,11 @@
 # New-Base-Project
 (For my team) These are the basics of what a web developer is expected to know. So, this is just a boilerplate, basic project structure for a new project. This uses NPM (Node Package Manager), Grunt, and Bower, and optionally Yoeman. These tools are now common place tools for a web/app developer creating a front-end user interface. Since you are here I won't go through Git, but I myself am learning while I go. From this starting point you can create/install any resource and be able to automate the process of distrobution - such as to a production server. You might just want to see Yeoman below.
 
-##To srtart, install NodeJS and NPM 
-(which comes together) 
-__https://nodejs.org/en/__
-Once Node is installed you can do all of the following, so from here I am assuming you have it. In their words "Node.js(R) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world."
+##To start, install NodeJS and NPM 
+(NodeJS and NPM comes together) 
+See __https://nodejs.org/en/__
+Once Node is installed you can do all of the following, so from here I am assuming you have it. In their words 
+>"Node.js(R) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world."
 
 Simply get this project and start building, but below is how I started.
 
@@ -14,7 +15,8 @@ By the way, here is a guide on Markdown: https://daringfireball.net/projects/mar
 
 ###Start by creating a Basic Setup with Bower
 I just can't live without Bower now that its here. See http://bower.io
-In their words "Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you."
+In their words 
+>"Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you."
 
 ##Install Bower
 
@@ -59,13 +61,14 @@ Once that is done you will have all required node packages, so now you can run g
 
 - [ ] $ __grunt__
 
-Isn’t that just friction awesome!grunt
+Isn’t that just awesome!
 
-But, let’s take this a step further. We will install other packages to enable grunt to create the project structures. What we did above was create the project libraries, create a Gruntfile.js file which will manage common tasks. So to get started review this link:
-https://www.npmjs.com/package/grunt-mkdir
+But, let’s take this a step further. We will install other packages to enable grunt to create the project structures. What we did above was create the project libraries, create a Gruntfile.js file which will manage common tasks. So to get started review this link: https://www.npmjs.com/package/grunt-mkdir
+__Not needed in this Gruntfile.js__ because its included, and running npm install will automatically include it in your project.
 
 ONLY NEEDED IF YOU DON’T HAVE IT
 - [ ] $ __npm install grunt-mkdir --save-dev__
+
 
 Now, we will update the grunt template you previously installed:
 
@@ -99,7 +102,7 @@ grunt.initConfig({
 
 ##More Options - Yeoman - Maybe the first
 (In their own words - http://yeoman.io/learning/) 
-Yeoman is a generic scaffolding system allowing the creation any kind of app. It allows for rapidly getting started on new projects and streamlines the maintenance of existing projects.
+>Yeoman is a generic scaffolding system allowing the creation any kind of app. It allows for rapidly getting started on new projects and streamlines the maintenance of existing projects.
 
 Installing yo and some generators
 
@@ -111,7 +114,8 @@ Then install the needed generator(s). Generators are npm packages named generato
 
 - [ ] $ __npm install -g generator-webapp__
 
-New Node and npm users might runs into permissions issues. These issues shows up in the form of EACCESS errors during installation. Refer to the npm guide to fix permissions if this happens to you.
+> New Node and npm users might runs into permissions issues. These issues show up in the form of EACCESS errors during installation. Refer to the npm guide to fix permissions if this happens to you.
+I usually type "sudo" for permissions before any command which will propt you for your password. Such as __$ sudo bower install <package name>__
 
 
 ###Final Thoughts
