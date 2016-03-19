@@ -1,7 +1,7 @@
 # New-Base-Project
-Just a boilerplate, basic project structure for a new project.
+Just a boilerplate, basic project structure for a new project. This uses NPM (Node Package Manager), Grunt, and Bower, and optionally Yoeman. These tools are now common place tools for a web/app developer creating a front-end user interface.
 
-
+As for me, I like simple instructions, such as do this, then that, so that is what I am trying to do here. Its hard where to assume what a person might or might not know, and what level of instruction to provide. I usually prefer implicit instructions.
 
 
 Use the following commands to generate your default project, and use bower to install the base components
@@ -9,17 +9,30 @@ Use the following commands to generate your default project, and use bower to in
 - [ ] $ bower init
 
 If you do not have grunt-init install it with the following command:
+
 ONLY NEEDED IF YOU DON’T HAVE IT
 - [ ] $ sudo npm install -g grunt-init
 
 Install a base template. Once grunt-init is installed, place this template in your ~/.grunt-init/ directory. It's recommended that you use git to clone this template into that directory, as follows:
+
 ONLY NEEDED IF YOU DON’T HAVE IT
 - [ ] git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+
+Included:
+```HTML
+// These plugins provide necessary tasks.
+grunt.loadNpmTasks('grunt-contrib-concat');
+grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-qunit');
+grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-mkdir');
+```
 
 Now run the following:
 - [ ] $ grunt-init gruntfile
 
-Now, run :
+Now run the following:
 - [ ] $ sudo npm install
 
 Once that is done you will have all required node packages, so now you can run grunt:
@@ -39,7 +52,7 @@ Now, we will update the grunt template you previously installed:
 Add the following:
 grunt.loadNpmTasks('grunt-mkdir');
 
-
+```HTML
 grunt.initConfig({
   mkdir: {
     options: {
@@ -50,9 +63,9 @@ grunt.initConfig({
     },
   },
 })
-
+```
 -OR-
-
+```HTML
 grunt.initConfig({
   mkdir: {
     all: {
@@ -62,10 +75,10 @@ grunt.initConfig({
     },
   },
 })
+```
 
-
-##More Options
-
+##More Options - Yeoman
+(In their own words - http://yeoman.io/learning/) 
 Yeoman is a generic scaffolding system allowing the creation any kind of app. It allows for rapidly getting started on new projects and streamlines the maintenance of existing projects.
 
 Installing yo and some generators

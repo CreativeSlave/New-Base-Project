@@ -2,7 +2,7 @@
 
 
 module.exports = function (grunt) {
-    grunt.loadNpmTasks('grunt-mkdir');
+
     // Project configuration.
     grunt.initConfig({
         // Metadata.
@@ -35,7 +35,21 @@ module.exports = function (grunt) {
         mkdir: {
             all: {
                 options: {
-                    create: ['build/js', 'build/less', 'build/templates', 'dist/css', 'dist/js', "lib/js", "bin"]
+                    create: [
+                        'node_modules',
+                        'bower_components',
+                        'build/js',
+                        'build/js/controllers',
+                        'build/js/services',
+                        'build/js/directives',
+                        'build/less',
+                        'build/less/components',
+                        'build/templates',
+                        'dist/css',
+                        'dist/js',
+                        "lib/js",
+                        "bin"
+                    ]
                 },
             },
         },
@@ -85,8 +99,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-mkdir');
 
     // Default task.
-    grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+    grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify','mkdir']);
 
 };
