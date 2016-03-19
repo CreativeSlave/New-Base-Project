@@ -27,7 +27,7 @@ In their words
 __Bower is a command line utility. Install it with npm.__
 
 ONLY NEEDED IF YOU DON’T HAVE IT
-- [ ] $__ npm install -g bower__
+- [ ] $ __npm install -g bower__
 
 Bower requires node, npm and git.
 
