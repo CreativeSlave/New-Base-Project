@@ -1,9 +1,10 @@
 # New-Base-Project
-(For my team) These are the basics of what a web developer is expected to know. So, this is just a boilerplate, basic project structure for a new project. This uses NPM (Node Package Manager), Grunt, and Bower, and optionally Yoeman. These tools are now common place tools for a web/app developer creating a front-end user interface. Since you are here I won't go through Git, but I myself am learning while I go. From this starting point you can any resource and be able to automate the process of distrobution - such as to a production server. You might just want to see Yeoman.
+(For my team) These are the basics of what a web developer is expected to know. So, this is just a boilerplate, basic project structure for a new project. This uses NPM (Node Package Manager), Grunt, and Bower, and optionally Yoeman. These tools are now common place tools for a web/app developer creating a front-end user interface. Since you are here I won't go through Git, but I myself am learning while I go. From this starting point you can create/install any resource and be able to automate the process of distrobution - such as to a production server. You might just want to see Yeoman below.
 
-To srtart, install NodeJS and NPM (which comes together) 
-https://nodejs.org/en/
-Once Node is installed you can do all of the following, so from here I am assuming you have it.
+##To srtart, install NodeJS and NPM 
+(which comes together) 
+__https://nodejs.org/en/__
+Once Node is installed you can do all of the following, so from here I am assuming you have it. In their words "Node.js(R) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world."
 
 Simply get this project and start building, but below is how I started.
 
