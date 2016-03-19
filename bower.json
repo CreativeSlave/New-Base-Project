@@ -2,12 +2,12 @@
   "name": "GruntTest",
   "version": "1.0.0",
   "authors": [
-    "Andrew Ambrose <andrew@creativeslave.com>"
+    "Drew Ambrose <CreativeSlave@users.noreply.github.com>"
   ],
-  "description": "Learning Grunt",
+  "description": "Learning how to set up a project",
   "main": "index.html",
   "keywords": [
-    "learn"
+    "learn","basics","Git","Grunt","Bower","Yeoman","Markdown"
   ],
   "license": "MIT",
   "ignore": [
