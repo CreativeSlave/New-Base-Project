@@ -96,14 +96,14 @@ Once that is done you will have all required node packages, so now you can run g
 
 Isn’t that just awesome!
 
-But, let’s take this a step further. We will install other packages to enable grunt to create the project structures. What we did above was create the project libraries, create a Gruntfile.js file which will manage common tasks. So to get started review this link: https://www.npmjs.com/package/grunt-mkdir
-__Not needed in this Gruntfile.js__ because its included, and running npm install will automatically include it in your project.
+But, let’s take this a step further. We will install other packages to enable grunt to create the project structures. What we did above was create the project libraries, and create a Gruntfile.js file which will manage common tasks. So to get started review this link: https://www.npmjs.com/package/grunt-mkdir
+For this Git project its not needed because its already part of the package.
 
 ONLY NEEDED IF YOU DON’T HAVE IT
 - [ ] $ __npm install grunt-mkdir --save-dev__
 
 
-Now, we will update the grunt template you previously installed:
+I updated the Gruntfile.js with the following to automatically install directories when running grunt.
 
 __Add the following:__
 grunt.loadNpmTasks('grunt-mkdir'); //(included in this Gruntfile.sj file)
@@ -126,6 +126,7 @@ grunt.initConfig({
   mkdir: {
     all: {
       options: {
+		// Array of directories
         create: ['tmp', 'test/very/deep/folder']
       },
     },
@@ -133,7 +134,7 @@ grunt.initConfig({
 })
 ```
 
-##More Options - Yeoman - Maybe the first
+##More Options - Yeoman 
 (In their own words - http://yeoman.io/learning/) 
 >Yeoman is a generic scaffolding system allowing the creation any kind of app. It allows for rapidly getting started on new projects and streamlines the maintenance of existing projects.
 
@@ -174,4 +175,4 @@ __grunt.loadNpmTasks('grunt-string-replace');__
 Please see their website for more details and options.
 
 ###Final Thoughts
-It would be nice to combine all of this in one command. That might be possible, but several commands have options, and typically you must choose your libraries. I hope someone smart - unlike me - will do this. In a case like that we could just open our favorite IDE (I like WebStorm for the tooling and terminal built in), and from a terminal opened at the project base type the command, select the options and be done. Yeoman does a lot, and may very well be that final tool to do all the above. Still though you have to manually create the Git repository, set up your SFTP and so forth.
+It seems the possibilities are endless for the purpose of automation. It would be nice to combine all of this in one command. That might be possible, but several commands have options, and typically you must choose your libraries. I hope someone smart - unlike me - will do this. In a case like that we could just open our favorite IDE (I like WebStorm for the tooling and terminal built in), and from a terminal opened at the project base type the command, select the options and be done. Yeoman does a lot, and may very well be that final tool to do all the above. Still though you have to manually create the Git repository, set up your SFTP and so forth.
