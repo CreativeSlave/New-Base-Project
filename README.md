@@ -32,7 +32,7 @@ ONLY NEEDED IF YOU DON’T HAVE IT
 
 Bower requires node, npm and git.
 
-Use the following commands to generate your default project, and use bower to install the base components
+Packages are defined by a manifest file bower.json. This is similar to Node’s package.json or Ruby’s Gemfile. Interactively create a bower.json with bower init. Use the following commands to generate your default project, and use bower to install the base components
 
 - [ ] $ __bower init__
 
