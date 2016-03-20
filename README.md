@@ -36,6 +36,7 @@ Use the following commands to generate your default project, and use bower to in
 
 - [ ] $ __bower init__
 
+Before you runt the grunt command you need a package.json file that lists the dependencies you want to install. To do this we will generate a basic package.json file, and Gruntfile.js. So, we will install a tool to generate this for you. You can obviously write or copy this just as easy, but I love shortcuts.
 If you do not have grunt-init install it with the following command:
 
 ONLY NEEDED IF YOU DON’T HAVE IT
@@ -59,6 +60,32 @@ grunt.loadNpmTasks('grunt-mkdir');
 
 Now run the following:
 - [ ] $ __grunt-init gruntfile__
+
+You should now have a package.son file with the following that this tool created from a template. YOu can modify the template at any time.
+```js
+{
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-htmlmin": "~0.2.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-rev": "~0.1.0",
+    "grunt-usemin": "~2.0.2",
+    "matchdep": "~0.3.0"
+  }
+}
+
+
+```
+
+
 
 Now run the following:
 - [ ] $ __sudo npm install__
