@@ -80,7 +80,7 @@ Now, we will update the grunt template you previously installed:
 __Add the following:__
 grunt.loadNpmTasks('grunt-mkdir'); //(included in this Gruntfile.sj file)
 
-```HTML
+```js
 grunt.initConfig({
   mkdir: {
     options: {
@@ -93,7 +93,7 @@ grunt.initConfig({
 })
 ```
 -OR-
-```HTML
+```js
 grunt.initConfig({
   mkdir: {
     all: {
@@ -130,6 +130,7 @@ https://www.npmjs.com/package/grunt-string-replace
 
 Replaces strings on files by using string or regex patterns. 
 Attempts to be a String.prototype.replace adapter task for your grunt project.
+Inside your Gruntfile.js file add a section named string-replace. This section specifies the files to edit, destinations, patterns and replacements.
 
 ###Getting Started
 This plugin requires node >= 0.8.0, Grunt >= 0.4.0 and npm >= 1.4.15 (latest stable is recommended).
@@ -141,6 +142,8 @@ If you haven't used Grunt before, be sure to check out the Getting Started guide
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 Include in Gruntfile.js if yu wish.
 __grunt.loadNpmTasks('grunt-string-replace');__
+
+Please see their website for more details and options.
 
 ###Final Thoughts
 It would be nice to combine all of this in one command. That might be possible, but several commands have options, and typically you must choose your libraries. I hope someone smart - unlike me - will do this. In a case like that we could just open our favorite IDE (I like WebStorm for the tooling and terminal built in), and from a terminal opened at the project base type the command, select the options and be done. Yeoman does a lot, and may very well be that final tool to do all the above. Still though you have to manually create the Git repository, set up your SFTP and so forth.

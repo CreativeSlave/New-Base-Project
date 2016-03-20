@@ -1,6 +1,8 @@
 /**
- * Project Set Up file
- */
+ * ! project - v1.0.0 - 2016-03-19
+ * https://github.com/CreativeSlave/New-Base-Project
+ * Copyright (c) 2016 Drew Ambrose; Licensed
+ * */
 var project = {
     name:"Base Project",
     logos:["/img/logo.svg","/img/logo.png"],
@@ -23,6 +25,14 @@ var project = {
         type:"",
         license:"MIT",
         extra:""
+    },
+    get:{
+        copyright: function(){
+            var rights = (project.copyright.reserved==='All') ? " All rights reserved.":"";
+            return "Copyright&copy; "+ project.company.name + ", "+ project.years + ". " + rights;
+        },
+        company: function(){
+            return project.company.name;
+        }
     }
-
 }
