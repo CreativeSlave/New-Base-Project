@@ -85,7 +85,7 @@ You should now have a package.son file with the following that this tool created
 
 ```
 
-
+NPM will install all required node_modules identified in the package.json file with a simple command, just as bower install installed the bower_components with a simular command.
 
 Now run the following:
 - [ ] $ __sudo npm install__
